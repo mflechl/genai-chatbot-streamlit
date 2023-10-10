@@ -1,9 +1,20 @@
-[![CI](https://github.com/mflechl/python-ci-template/actions/workflows/main.yml/badge.svg)](https://github.com/mflechl/python-ci-template/actions/workflows/main.yml)
+[![CI](https://github.com/mflechl/genai-chatbot-streamlit/actions/workflows/main.yml/badge.svg)](https://github.com/mflechl/genai-chatbot-streamlit/actions/workflows/main.yml)
 
-# python-ci-template
-Template for a Python project using CI
+# genai-chatbot-streamlit
+Chatbot using LangChain and LLMs+RAG with the option for the user to upload and talk to their PDFs
 
-# to stop Codespaces
-Ctrl+Shift+P
-type "stop" and select "Codespaces:Stop"
-select the one you want to stop
+# to set up
+```
+git clone git@github.com:mflechl/genai-chatbot-streamlit.git
+
+python3 -m venv env
+source env/bin/activate
+
+pip install --upgrade pip &&\
+  pip install -r requirements.txt
+```
+
+# to run
+```
+streamlit run app.py  [--server.port NNNN]
+```
